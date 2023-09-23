@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.container {
+  width: 1440px;
+  max-width: 1440px;
+  height: 4280px;
+  max-height: 4280px;
+  margin: 0px auto;
+  background: #202023;
+}
+/* body {
+    width: 1440px;
+    max-width: 1440px;
+height: 4280px;
+max-height: 4280px;
+} */
+header {
+  background-image: url(https://s3-alpha-sig.figma.com/img/3eed/c1df/4a640fe6141b5401f2765425923249b8?Expires=1696204800&Signature=VJj5kDgwtnfKYeWQYsY~OUNARwRJ9ozK6pbOzYgQU~gNqo6HqpWUKnPmzX0OuSdGksdOCLk5Iibu36R5hTlz86l3Pa4nb47yD4t5xKv45mdtfXZUAvmk48ku5hTCN7gko6zQtH31njQBxRIOvCzbGDayLXlPNkPVf5zjaTzuFOhimi8co1VYHwejSecWq5l8na7oHhKKe07PToDTsJqFU7VCCviFo0pb377MsAnIunGObjJ8nMvbAzxFIScGOhJaPlPUdrI8XsFBGCsptpyHslp~CU~6v7iYEeb4iGdd3uNrblt3rKPQbuRjYnZezJGGGaCjbE3FNkYu2kBuv6t24A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-size: 1440px 1024px;
+  width: 1440px;
+  height: 1024px;
+  transform: translateY(-55px);
+}
+.nav {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin-left: 146px;
+  margin-top: 55px;
+}
+.ul li {
+  display: inline-block;
+  margin: 10px;
+  padding: 0;
+}
+
+.title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin-left: 156px;
+}
+.undertitle-text {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 156px;
+}
+.buy-button {
+  width: 207px;
+  height: 57px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 17px;
+  background: #b47b48;
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 157px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cookies {
+  width: 310px;
+  height: 225px;
+  flex-shrink: 0;
+  background: #272727;
+  margin-left: 162px;
+  margin-top: 140px;
+}
+.cookies-img01 {
+  width: 150px;
+  height: 225px;
+  flex-shrink: 0;
+  transform: translateY(-15px);
+}
+.cookies-img02 {
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+  fill: rgba(217, 217, 217, 0);
+  stroke-width: 1px;
+  stroke: #fff;
+  transform: translate(-20px, -40px);
+}
+.cookies-cost {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  transform: translate(190px, -240px);
+}
+.cookies-signature {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transform: translate(170px, -250px);
+}
+.cookies-buy-button {
+  width: 79px;
+  height: 34px;
+  flex-shrink: 0;
+  background: #c85312;
+  border: none;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  transform: translate(200px, -230px);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.a1 {
+  color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+transform: translate(143.3px, -81px);
+}
+
+.croissant {
+  width: 310px;
+height: 225px;
+flex-shrink: 0;
+background: #272727;
+margin-left: 576px;
+transform: translateY(-225px);
+}
+.croissant-img01 {
+  width: 213px;
+height: 225px;
+flex-shrink: 0;
+margin-left: -5px;
+}
+.croissant-img02 {
+  width: 23px;
+height: 23px;
+flex-shrink: 0;
+fill: rgba(217, 217, 217, 0.00);
+stroke-width: 1px;
+stroke: #FFF;
+transform: translate(-25px,-40px);
+}
+.croissant-cost {
+  color: #FFF;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+transform: translate(220px, -240px);
+}
+.croissant-signature {
+  color: #FFF;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+transform: translate(215px, -260px);
+}
+.croissant-buy-button {
+  width: 79px;
+height: 34px;
+flex-shrink: 0;
+background: #C85312;
+border: none;
+color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+text-transform: uppercase;
+transform: translate(215px, -248px);
+}
+.a2 {
+  color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+transform: translate(196.5px, -82px);
+}
+
+.pie {
+  width: 310px;
+height: 225px;
+flex-shrink: 0;
+background: #EBAD51;
+margin-left: 1006px;
+transform: translateY(-450px);
+}
+.pie-img {
+  width: 193px;
+height: 193px;
+flex-shrink: 0;
+margin-top: 28px;
+}
+.pie-cost {
+  color: #FFF;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+transform: translate(185px, -230px);
+}
+.pie-signature {
+  color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+transform: translate(185px, -240px);
+}
+.pie-buy-button {
+  width: 79px;
+height: 34px;
+flex-shrink: 0;
+background: #C85312;
+border: none;
+color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+text-transform: uppercase;
+transform: translate(200px, -230px);
+}
+
+
+.menu-title {
+  color: #FFF;
+font-family: 'Inter', sans-serif;
+font-size: 64px;
+font-style: normal;
+font-weight: 100;
+line-height: normal;
+text-align: center;
+transform: translateY(-100px);
+}
+
+.breads {
+  width: 328px;
+height: 229px;
+flex-shrink: 0;
+border: 1px solid #FFF;
+margin-left: 275px;
+transform: translateY(-120px);
+}
+.bread-img {
+  width: 294px;
+height: 184.39px;
+flex-shrink: 0;
+margin-top: 14px;
+margin-left: 20px;
+}
+.bread-subtitle {
+  color: #FFF;
+font-family: Inter;
+font-size: 25.92px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+text-align: center;
+transform: translateY(-30px);
+}
+.bread-buy-button {
+  width: 160px;
+height: 41px;
+flex-shrink: 0;
+border: none;
+border-radius: 17px;
+background: #B47B48;
+color: #FFF;
+font-family: Inter;
+font-size: 25.92px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+transform: translate(85px, -45px);
+}
+
+.bekary {
+  width: 328px;
+height: 229px;
+flex-shrink: 0;
+border: 1px solid #FFF;
+margin-left: 800px;
+transform: translateY(-350px);
+}
+.bekary-cake {
+  width: 246px;
+height: 171px;
+flex-shrink: 0;
+transform: translate(100px, -45px);
+}
+.bekary-bread1 {
+  width: 249px;
+height: 185px;
+flex-shrink: 0;
+transform: translate(-10px,-165px);
+}
+.bekary-bread2 {
+  width: 165px;
+height: 128px;
+flex-shrink: 0;
+transform: translate(162px, -308px);
+}
+.bekary-subtitle {
+  color: #FFF;
+font-family: Inter;
+font-size: 25.92px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+transform: translate(140px, -325px);
+}
+.bekary-buy-button {
+  width: 132px;
+height: 41px;
+flex-shrink: 0;
+border: none;
+border-radius: 17px;
+background: #B47B48;
+color: #FFF;
+font-family: Inter;
+font-size: 25.92px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+transform: translate(113px, -340px);
+}
+
+.cakes-and-capcakes {
+  width: 328px;
+height: 250px;
+flex-shrink: 0;
+border: 1px solid #FFF;
+margin-left: 275px;
+transform: translateY(-290px);
+}
+.cakes-and-capcakes-pie {
+  width: 261.566px;
+height: 260px;
+flex-shrink: 0;
+margin-left: 43px;
+transform: translateY(-15px);
+}
+.cakes-and-capcakes-cupcake {
+  width: 93.193px;
+height: 116.687px;
+flex-shrink: 0;
+transform: translate(70px, -170px);
+}
+.cakes-and-capcakes-subtitle {
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
+font-size: 25.92px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+transform: translate(60px, -200px);
+}
+.cakes-and-capcakes-buy-button {
+  width: 160px;
+height: 41px;
+flex-shrink: 0;
+border: none;
+border-radius: 17px;
+background: #B47B48;
+color: #FFF;
+font-family: Inter;
+font-size: 25.92px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+transform: translate(90px, -205px);
+}
+
+.cookies-and-pretzels {
+  width: 328px;
+height: 250px;
+flex-shrink: 0;
+border: 1px solid #FFF;
+margin-left: 800px;
+transform: translateY(-542px);
+}
+.cookies-and-pretzels-cookies {
+  width: 209px;
+height: 216px;
+flex-shrink: 0;
+margin-left: 47px;
+}
+.cookies-and-pretzels-pretzels {
+  width: 160px;
+height: 160px;
+flex-shrink: 0;
+transform: translateY(-150px);
+margin-left: 30px;
+}
+.cookies-and-pretzels-subtitle {
+  color: #FFF;
+font-family: Inter;
+font-size: 25.92px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+transform: translate(20px, -200px);
+}
+.cookies-and-pretzels-buy-button {
+  width: 137px;
+height: 41px;
+flex-shrink: 0;
+border: none;
+border-radius: 17px;
+background: #B47B48;
+color: #FFF;
+font-family: Inter;
+font-size: 25.92px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+transform: translate(100px, -205px);
+}
+
+
+.quality-our-bekary {
+  width: 1845px;
+height: 853px;
+flex-shrink: 0;
+transform: translateY(-430px);
+border: 1px solid #fff;
+}
+.quality-our-bekary-title {
+  color: #FFF;
+  font-family: 'Italiana', serif;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+transform: translate(600px, 36px);
+}
+.quality-our-bekary-bread {
+  width: 355.89px;
+height: 223px;
+flex-shrink: 0;
+margin-left: 172px;
+margin-top: -80px;
+}
+.quality-our-bekary-ul1 {
+  width:  274.475px;
+height: 197.532px;
+flex-shrink: 0;
+background: rgba(242, 242, 242, 0.30);
+margin-left: 221px;
+}
+.quality-our-bekary-ul1 > li {
+  color: #FFF;
+font-family: 'Inter', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+transform: translate(-30px, 20px);
+margin-top: 2px;
+}
