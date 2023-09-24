@@ -16,7 +16,7 @@
     <div class="container">
 
 
-      <div class="popup-menu">
+      <div id="popup" style="display: none;" class="popup">
         <form>
           <h2 class="form-title">TRADITIONAL <br> ARTISAX BAKERY</h2>
           <input class="address-input" type="text" placeholder="Your address"> <br>
@@ -69,7 +69,7 @@
             <p class="a1">!</p>
             <p class="cookies-cost">$8.00(kg)</p>
             <p class="cookies-signature">American Cockie</p>
-            <button class="cookies-buy-button" type="button">buy</button>
+            <button id="buy01" class="cookies-buy-button" type="button">buy</button>
           </div>
           <div class="croissant">
             <img
@@ -93,7 +93,7 @@
               Crushed with <br />
               chockolate
             </p>
-            <button class="croissant-buy-button" type="button">buy</button>
+            <button id="buy02" class="croissant-buy-button" type="button">buy</button>
           </div>
           <div class="pie">
             <img class="pie-img" src="./image/pie.png" alt="pie" />
@@ -102,7 +102,7 @@
               &nbsp;&nbsp;&nbsp;$4.00
             </p>
             <p class="pie-signature">Blackberry pie</p>
-            <button class="pie-buy-button" type="button">buy</button>
+            <button id="buy03" class="pie-buy-button" type="button">buy</button>
           </div>
         </section>
       </header>
@@ -437,6 +437,7 @@
         </section>
       </footer>
     </div>
+    <div id="blur-background" class="blur-background"></div>
     <script src="./js/main.js"></script>
   </body>
 </html>

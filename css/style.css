@@ -43,6 +43,17 @@ header {
   width: 1440px;
   height: 1024px;
   transform: translateY(-55px);
+  backdrop-filter: blur(3px);
+}
+.blur-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px); 
+  z-index: 9998;
 }
 .nav {
   color: #fff;
@@ -108,13 +119,28 @@ header {
   -moz-box-shadow: -1px 1px 40px 1px rgba(255, 0, 0, 1);
 }
 
-.popup-menu {
+.popup {
+  overflow: hidden;
+  position: fixed;
+  margin-left: 225px;
   width: 990px;
 height: 669px;
 flex-shrink: 0;
 border: none;
 border-radius: 50px;
 background: #FFF;
+z-index:9999;  
+animation: popup-fade-in 0.5s ease-in-out;
+}
+@keyframes popup-fade-in {
+  0% {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
 }
 .form-title {
   color: #000;
@@ -124,20 +150,21 @@ font-style: normal;
 font-weight: 200;
 line-height: normal;
 margin-left: 87px;
-transform: translateY(94px);
+transform: translateY(24px);
 }
 .address-input {
   width: 412px;
 height: 72px;
 flex-shrink: 0;
 background: #F5F5F5;
+border: none;
 color: #000;
 font-family: Inter;
 font-size: 24px;
 font-style: normal;
 font-weight: 200;
 line-height: normal;
-margin-top: 100px;
+margin-top: 40px;
 margin-left: 83px;
 }
 .card-input {
@@ -153,6 +180,7 @@ font-weight: 200;
 line-height: normal;
 margin-top: 71px;
 margin-left: 83px;
+border: none;
 }
 .form-btn {
   width: 207px;
@@ -170,10 +198,11 @@ line-height: normal;
 text-transform: uppercase;
 margin-top: 54px;
 margin-left: 83px;
+cursor: pointer;
 }
 .form-img{
 margin-left: 514px;
-transform: translateY(-330px);
+transform: translateY(-430px);
 }
 
 
