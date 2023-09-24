@@ -11,15 +11,27 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
-    <style></style>
   </head>
   <body>
     <div class="container">
+
+
+      <div class="popup-menu">
+        <form>
+          <h2 class="form-title">TRADITIONAL <br> ARTISAX BAKERY</h2>
+          <input class="address-input" type="text" placeholder="Your address"> <br>
+          <input class="card-input" type="text" inputmode="numeric" placeholder="Your card"> <br>
+          <button class="form-btn" type="submit">Shop now</button>
+          <img class="form-img" src="./image/breads.png" alt="bread">
+        </form>
+      </div>
+
+
       <header class="first-screen">
         <nav class="nav">
           <ul class="ul">
             <li class="about"><a href="#">About us</a></li>
-            <li class="delivery"><a href="#">Delivery</a></li>
+            <li id="scroll-object" class="delivery"><a href="#">Delivery</a></li>
             <li class="menu"><a href="#">Menu</a></li>
             <li class="contacts"><a href="#">Contacts</a></li>
             <li class="reviews"><a href="#">Reviews</a></li>
@@ -40,7 +52,8 @@
             but also the leap into electronic typesetting, remaining <br />
             essentially unchanged.
           </p>
-          <button class="buy-button" type="button">shop now</button>
+          <button id="bybtn" class="buy-button" type="button">shop now</button>
+          <b id="message" style="display: none;" class="neon">You have added an item to your cart, to buy, click the button above.</b>
           <div class="cookies">
             <img class="cookies-img01" src="./image/cookie.png" alt="cookie" />
             <svg
@@ -99,7 +112,7 @@
           <div class="breads">
             <img class="bread-img" src="./image/bread.png" alt="bread" />
             <p class="bread-subtitle">Breads</p>
-            <button class="bread-buy-button" type="button">Order</button>
+            <button id="order01" class="bread-buy-button order" type="button">Order</button>
           </div>
           <div class="bekary">
             <img class="bekary-cake" src="./image/cake.png" alt="cake" />
@@ -110,7 +123,7 @@
               alt="bread"
             />
             <p class="bekary-subtitle">Bekary</p>
-            <button class="bekary-buy-button" type="button">Order</button>
+            <button id="order02" class="bekary-buy-button order" type="button">Order</button>
           </div>
           <div class="cakes-and-capcakes">
             <img
@@ -124,7 +137,7 @@
               alt="cupcake"
             />
             <p class="cakes-and-capcakes-subtitle">Cakes & Capcakes</p>
-            <button class="cakes-and-capcakes-buy-button" type="button">
+            <button id="order03" class="cakes-and-capcakes-buy-button order" type="button">
               Order
             </button>
           </div>
@@ -140,7 +153,7 @@
               alt="pretzels"
             />
             <p class="cookies-and-pretzels-subtitle">Coockies&Pretzels</p>
-            <button class="cookies-and-pretzels-buy-button" type="button">
+            <button id="order04" class="cookies-and-pretzels-buy-button order" type="button">
               Order
             </button>
           </div>
