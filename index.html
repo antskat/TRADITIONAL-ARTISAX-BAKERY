@@ -14,30 +14,48 @@
   </head>
   <body>
     <div class="container">
-
-
-      <div id="popup" style="display: none;" class="popup">
+      <div id="popup" style="display: none" class="popup">
         <form>
-          <h2 class="form-title">TRADITIONAL <br> ARTISAX BAKERY</h2>
-          <input class="address-input" type="text" placeholder="Your address"> <br>
-          <input class="card-input" type="text" inputmode="numeric" placeholder="Your card"> <br>
+          <h2 class="form-title">
+            TRADITIONAL <br />
+            ARTISAX BAKERY
+          </h2>
+          <input
+            name="address-input"
+            class="address-input"
+            type="text"
+            placeholder="Your address"
+          />
+          <br />
+          <input
+            name="card-input"
+            class="card-input"
+            type="text"
+            inputmode="numeric"
+            placeholder="Your card"
+          />
+          <br />
           <button class="form-btn" type="submit">Shop now</button>
-          <img class="form-img" src="./image/breads.png" alt="bread">
+          <button id="closebtn" class="closebtn" type="button"></button>
+          <img class="form-img" src="./image/breads.png" alt="bread" />
         </form>
       </div>
-
 
       <header class="first-screen">
         <nav class="nav">
           <ul class="ul">
-            <li class="about"><a href="#">About us</a></li>
-            <li id="scroll-object" class="delivery"><a href="#">Delivery</a></li>
-            <li class="menu"><a href="#">Menu</a></li>
-            <li class="contacts"><a href="#">Contacts</a></li>
-            <li class="reviews"><a href="#">Reviews</a></li>
+            <li class="about-nav-link"><a href="#">About us</a></li>
+            <li id="scroll-object" class="delivery-nav-link">
+              <a href="#">Delivery</a>
+            </li>
+            <li class="menu-nav-link"><a href="#">Menu</a></li>
+            <li class="contacts-nav-link"><a href="#">Contacts</a></li>
+            <li class="reviews-nav-link"><a href="#">Reviews</a></li>
           </ul>
         </nav>
-        <section>
+      </header>
+      <main>
+        <section class="main-menu">
           <h1 class="title">
             TRADITIONAL <br />
             ARTISAX BAKERY
@@ -53,110 +71,175 @@
             essentially unchanged.
           </p>
           <button id="bybtn" class="buy-button" type="button">shop now</button>
-          <b id="message" style="display: none;" class="neon">You have added an item to your cart, to buy, click the button above.</b>
-          <div class="cookies">
-            <img class="cookies-img01" src="./image/cookie.png" alt="cookie" />
-            <svg
-              class="cookies-img02"
-              xmlns="http://www.w3.org/2000/svg"
-              width="23"
-              height="23"
-              viewBox="0 0 23 23"
-              fill="none"
-            >
-              <circle cx="11.5" cy="11.5" r="11" stroke="white" />
-            </svg>
-            <p class="a1">!</p>
-            <p class="cookies-cost">$8.00(kg)</p>
-            <p class="cookies-signature">American Cockie</p>
-            <button id="buy01" class="cookies-buy-button" type="button">buy</button>
-          </div>
-          <div class="croissant">
-            <img
-              class="croissant-img01"
-              src="./image/croissant.png"
-              alt="croissant"
-            />
-            <svg
-              class="croissant-img02"
-              xmlns="http://www.w3.org/2000/svg"
-              width="23"
-              height="23"
-              viewBox="0 0 23 23"
-              fill="none"
-            >
-              <circle cx="11.5" cy="11.5" r="11" stroke="white" />
-            </svg>
-            <p class="a2">!</p>
-            <p class="croissant-cost">$4.00</p>
-            <p class="croissant-signature">
-              Crushed with <br />
-              chockolate
-            </p>
-            <button id="buy02" class="croissant-buy-button" type="button">buy</button>
-          </div>
-          <div class="pie">
-            <img class="pie-img" src="./image/pie.png" alt="pie" />
-            <p class="pie-cost">
-              For piece <br />
-              &nbsp;&nbsp;&nbsp;$4.00
-            </p>
-            <p class="pie-signature">Blackberry pie</p>
-            <button id="buy03" class="pie-buy-button" type="button">buy</button>
-          </div>
+          <b id="message" style="display: none" class="neon"
+            >You have added an item to your cart, to buy, click the button
+            above.</b
+          >
+          <ul>
+            <li>
+              <div class="cookies">
+                <img
+                  class="cookies-img01"
+                  src="./image/cookie.png"
+                  alt="cookie"
+                />
+                <svg
+                  class="cookies-img02"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                >
+                  <circle cx="11.5" cy="11.5" r="11" stroke="white" />
+                </svg>
+                <p class="a1">!</p>
+                <p class="cookies-cost">$8.00(kg)</p>
+                <p class="cookies-signature">American Cockie</p>
+                <button
+                  id="buy01"
+                  class="cookies-buy-button main-menu-buy-btn"
+                  type="button"
+                >
+                  buy
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="croissant">
+                <img
+                  class="croissant-img01"
+                  src="./image/croissant.png"
+                  alt="croissant"
+                />
+                <svg
+                  class="croissant-img02"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                >
+                  <circle cx="11.5" cy="11.5" r="11" stroke="white" />
+                </svg>
+                <p class="a2">!</p>
+                <p class="croissant-cost">$4.00</p>
+                <p class="croissant-signature">
+                  Crushed with <br />
+                  chockolate
+                </p>
+                <button
+                  id="buy02"
+                  class="croissant-buy-button main-menu-buy-btn"
+                  type="button"
+                >
+                  buy
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="pie">
+                <img class="pie-img" src="./image/pie.png" alt="pie" />
+                <p class="pie-cost">
+                  For piece <br />
+                  &nbsp;&nbsp;&nbsp;$4.00
+                </p>
+                <p class="pie-signature">Blackberry pie</p>
+                <button
+                  id="buy03"
+                  class="pie-buy-button main-menu-buy-btn"
+                  type="button"
+                >
+                  buy
+                </button>
+              </div>
+            </li>
+          </ul>
         </section>
-      </header>
-      <main>
         <section class="menu">
           <h2 class="menu-title">Menu</h2>
-          <div class="breads">
-            <img class="bread-img" src="./image/bread.png" alt="bread" />
-            <p class="bread-subtitle">Breads</p>
-            <button id="order01" class="bread-buy-button order" type="button">Order</button>
-          </div>
-          <div class="bekary">
-            <img class="bekary-cake" src="./image/cake.png" alt="cake" />
-            <img class="bekary-bread1" src="./image/pngwing.png" alt="bread" />
-            <img
-              class="bekary-bread2"
-              src="./image/pngegg(3).png"
-              alt="bread"
-            />
-            <p class="bekary-subtitle">Bekary</p>
-            <button id="order02" class="bekary-buy-button order" type="button">Order</button>
-          </div>
-          <div class="cakes-and-capcakes">
-            <img
-              class="cakes-and-capcakes-pie"
-              src="./image/pngwing3.png"
-              alt="pie"
-            />
-            <img
-              class="cakes-and-capcakes-cupcake"
-              src="./image/pngwing2.png"
-              alt="cupcake"
-            />
-            <p class="cakes-and-capcakes-subtitle">Cakes & Capcakes</p>
-            <button id="order03" class="cakes-and-capcakes-buy-button order" type="button">
-              Order
-            </button>
-          </div>
-          <div class="cookies-and-pretzels">
-            <img
-              class="cookies-and-pretzels-cookies"
-              src="./image/pngegg(4)1.png"
-              alt="cookies"
-            />
-            <img
-              class="cookies-and-pretzels-pretzels"
-              src="./image/pngegg(5)1.png"
-              alt="pretzels"
-            />
-            <p class="cookies-and-pretzels-subtitle">Coockies&Pretzels</p>
-            <button id="order04" class="cookies-and-pretzels-buy-button order" type="button">
-              Order
-            </button>
-          </div>
+          <ul>
+            <li>
+              <div class="breads">
+                <img class="bread-img" src="./image/bread.png" alt="bread" />
+                <p class="bread-subtitle">Breads</p>
+                <button
+                  id="order01"
+                  class="bread-buy-button order"
+                  type="button"
+                >
+                  Order
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="bekary">
+                <img class="bekary-cake" src="./image/cake.png" alt="cake" />
+                <img
+                  class="bekary-bread1"
+                  src="./image/pngwing.png"
+                  alt="bread"
+                />
+                <img
+                  class="bekary-bread2"
+                  src="./image/pngegg(3).png"
+                  alt="bread"
+                />
+                <p class="bekary-subtitle">Bekary</p>
+                <button
+                  id="order02"
+                  class="bekary-buy-button order"
+                  type="button"
+                >
+                  Order
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="cakes-and-capcakes">
+                <img
+                  class="cakes-and-capcakes-pie"
+                  src="./image/pngwing3.png"
+                  alt="pie"
+                />
+                <img
+                  class="cakes-and-capcakes-cupcake"
+                  src="./image/pngwing2.png"
+                  alt="cupcake"
+                />
+                <p class="cakes-and-capcakes-subtitle">Cakes & Capcakes</p>
+                <button
+                  id="order03"
+                  class="cakes-and-capcakes-buy-button order"
+                  type="button"
+                >
+                  Order
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="cookies-and-pretzels">
+                <img
+                  class="cookies-and-pretzels-cookies"
+                  src="./image/pngegg(4)1.png"
+                  alt="cookies"
+                />
+                <img
+                  class="cookies-and-pretzels-pretzels"
+                  src="./image/pngegg(5)1.png"
+                  alt="pretzels"
+                />
+                <p class="cookies-and-pretzels-subtitle">Coockies&Pretzels</p>
+                <button
+                  id="order04"
+                  class="cookies-and-pretzels-buy-button order"
+                  type="button"
+                >
+                  Order
+                </button>
+              </div>
+            </li>
+          </ul>
         </section>
         <section class="quality-our-bekary">
           <h2 class="quality-our-bekary-title">Quality our bekary</h2>
