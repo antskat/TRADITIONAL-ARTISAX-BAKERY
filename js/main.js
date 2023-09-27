@@ -39,6 +39,7 @@ var buybtn02 = document.getElementById("buy02");
 var buybtn03 = document.getElementById("buy03");
 var blurBg = document.getElementById("blur-background");
 var closebtn = document.getElementById("closebtn");
+var closebtn2 = document.getElementById("container");
 
 function showPopup() {
   let elem = document.getElementById("popup");
@@ -76,3 +77,21 @@ buybtn01.addEventListener("click", showPopup);
 buybtn02.addEventListener("click", showPopup);
 buybtn03.addEventListener("click", showPopup);
 closebtn.addEventListener("click", closePopup);
+blurBg.addEventListener("click", closePopup);
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    closePopup();
+  }
+});
+
+// const div = document.querySelector("#popup");
+
+// if (div.style.display = 'block') {
+//   document.addEventListener("click", (e) => {
+//     const withinBoundaries = e.composedPath().includes(div);
+
+//     if (!withinBoundaries) {
+//       div.style.display = "none";
+//     }
+//   });
+// }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box" style="
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;">
+        <p>Какой-то текст</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).click('on', function(e) {
+            var box = $('.box');
+            if (!box.is(e.target) && box.has(e.target).length === 0) {
+                box.hide();
+            }
+        })
+    </script>
+</body>
+</html>

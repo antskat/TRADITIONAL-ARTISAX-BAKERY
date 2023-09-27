@@ -20,7 +20,7 @@ a {
   transition: all 1s ease;
 }
 
-.order:before {
+.order::before {
   content: "";
   position: absolute;
   top: 0;
@@ -89,7 +89,6 @@ header {
 
 .main-menu {
   transform: translateY(-1030px);
-  z-index: 9997;
 }
 .title {
   color: #fff;
@@ -140,6 +139,11 @@ header {
   -moz-box-shadow: -1px 1px 40px 1px rgba(255, 0, 0, 1);
 }
 
+/* .popup-parent {
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+} */
 .popup {
   overflow: hidden;
   position: fixed;
@@ -502,24 +506,6 @@ header {
   margin-left: 800px;
   transform: translateY(-350px);
 }
-.bekary-cake {
-  width: 246px;
-  height: 171px;
-  flex-shrink: 0;
-  transform: translate(100px, -45px);
-}
-.bekary-bread1 {
-  width: 249px;
-  height: 185px;
-  flex-shrink: 0;
-  transform: translate(-10px, -165px);
-}
-.bekary-bread2 {
-  width: 165px;
-  height: 128px;
-  flex-shrink: 0;
-  transform: translate(162px, -308px);
-}
 .bekary-subtitle {
   color: #fff;
   font-family: Inter;
@@ -542,8 +528,11 @@ header {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  transform: translate(113px, -340px);
+  transform: translate(113px, -35px);
   cursor: pointer;
+}
+.bekary-img {
+  transform: translateY(-50px);
 }
 
 .cakes-and-capcakes {
@@ -554,19 +543,10 @@ header {
   margin-left: 275px;
   transform: translateY(-290px);
 }
-.cakes-and-capcakes-pie {
-  width: 261.566px;
-  height: 260px;
-  flex-shrink: 0;
-  margin-left: 43px;
-  transform: translateY(-15px);
+.cakes-and-capcakes-img {
+  transform: translate(30px, -15px);
 }
-.cakes-and-capcakes-cupcake {
-  width: 93.193px;
-  height: 116.687px;
-  flex-shrink: 0;
-  transform: translate(70px, -170px);
-}
+
 .cakes-and-capcakes-subtitle {
   color: #fff;
   font-family: "Inter", sans-serif;
@@ -575,7 +555,7 @@ header {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  transform: translate(60px, -200px);
+  transform: translate(60px, -80px);
 }
 .cakes-and-capcakes-buy-button {
   width: 160px;
@@ -590,7 +570,7 @@ header {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  transform: translate(90px, -205px);
+  transform: translate(90px, -85px);
   cursor: pointer;
 }
 
@@ -602,18 +582,14 @@ header {
   margin-left: 800px;
   transform: translateY(-542px);
 }
+.cookies-and-pretzels-img {
+  margin-left: 50px;
+}
 .cookies-and-pretzels-cookies {
   width: 209px;
   height: 216px;
   flex-shrink: 0;
   margin-left: 47px;
-}
-.cookies-and-pretzels-pretzels {
-  width: 160px;
-  height: 160px;
-  flex-shrink: 0;
-  transform: translateY(-150px);
-  margin-left: 30px;
 }
 .cookies-and-pretzels-subtitle {
   color: #fff;
@@ -622,7 +598,7 @@ header {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  transform: translate(20px, -200px);
+  transform: translate(20px, -50px);
 }
 .cookies-and-pretzels-buy-button {
   width: 137px;
@@ -637,7 +613,7 @@ header {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  transform: translate(100px, -205px);
+  transform: translate(100px, -55px);
   cursor: pointer;
 }
 
@@ -657,6 +633,9 @@ header {
   transform: translate(600px, 36px);
 }
 
+.quality-our-bekary-ul {
+  margin-left: -100px;
+}
 .quality-our-bekary-bread {
   width: 355.89px;
   height: 223px;
@@ -679,7 +658,7 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  transform: translate(-30px, 20px);
+  transform: translate(-10px, 20px);
   margin-top: 2px;
 }
 .quality-our-bekary-cookies {
@@ -703,7 +682,7 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  transform: translate(-20px, 30px);
+  transform: translate(-10px, 30px);
   margin-top: 2px;
 }
 
@@ -728,7 +707,7 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  transform: translate(-15px, 13px);
+  transform: translate(-10px, 13px);
   margin-top: 2px;
 }
 
@@ -820,11 +799,11 @@ header {
   line-height: normal;
   margin-left: 160px;
 }
-.address-url {
+iframe {
   width: 535.213px;
-  height: 487px;
-  flex-shrink: 0;
-  margin-left: 160px;
+height: 487px;
+flex-shrink: 0;
+margin-left: 160px;
 }
 
 .how {
