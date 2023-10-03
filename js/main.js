@@ -83,15 +83,3 @@ document.addEventListener("keydown", function (e) {
     closePopup();
   }
 });
-
-// const div = document.querySelector("#popup");
-
-// if (div.style.display = 'block') {
-//   document.addEventListener("click", (e) => {
-//     const withinBoundaries = e.composedPath().includes(div);
-
-//     if (!withinBoundaries) {
-//       div.style.display = "none";
-//     }
-//   });
-// }
